@@ -6,14 +6,25 @@
     <style>
       body {
         background-color: #ffffff;
-        color: #ff00b3;
+        color: rgba(255, 0, 0, 1);
         font-style: italic;
 		font-family: Arial, sans-serif;
 	    background-repeat: repeat;
         background-image: url('img/bgmaa.png');
         text-align: center;
 		text-decoration: underline;
+		animation: rainbow 2s infinite linear;
       }
+
+		@keyframes rainbow {
+		0% { color: rgba(255, 0, 0, 1); };
+		16% { color: rgba(255, 255, 0, 1); };
+		33% { color: rgba(0, 255, 0, 1); };
+		50% { color: rgba(0, 255, 255, 1); };
+		67% { color: rgba(0, 0, 255, 1); };
+		84% { color: rgba(255, 0, 255, 1); };
+		100% { color: rgba(255, 0, 0, 1); };
+		}
 
       .fun {
 		position: relative;
